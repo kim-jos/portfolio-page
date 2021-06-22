@@ -1,0 +1,66 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  /* color: #2c3e50; */
+  margin-top: 60px;
+  position: absolute;
+  display: flex;
+}
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px 0 0;
+  top: 0;
+}
+.exit {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.fas {
+  justify-content: flex-end;
+}
+.menuBtn {
+  list-style: none;
+  width: 50vw;
+}
+.backdrop {
+  top: 0;
+  position: fixed;
+  background: rgba(49, 47, 47, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.modalRight,
+.modalLeft {
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+  background: rgba(49, 47, 47, 0.5);
+  display: flex;
+}
+.modalRight {
+  background: rgba(41, 40, 40, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+.modalLeft {
+  align-items: center;
+  justify-content: center;
+}
+.menuBtn {
+  padding: 0;
+}
+.menuBtn li,
+.menuBtn a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 30px;
+  line-height: 100px;
+}
+.menuBtn a:hover {
+  color: var(--secondary-color);
+}

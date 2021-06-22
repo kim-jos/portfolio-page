@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="https://kit.fontawesome.com/b90c797130.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  
+  <title>My Work</title>
+</head>
+<body>
+  
+  <div class="container">
+
+    <h1 class="title">Contact<span id="titleHighlighted"> Me</span></h1>
+
+    <div id="app">
+      <div class="hamburger">
+        <i @click="toggleModal" class="fas fa-bars fa-2x"></i>
+      </div>
+      
+      <div v-if="showModal" class="backdrop">
+        <i class="fas fa-times exit" @click.self="closeModal"></i>
+        <div class="modalLeft"> 
+          hello
+        </div>
+        <div class="modalRight"> 
+          <ul class="menuBtn">
+            <li><a @click.self="closeModal" >Home</a></li>
+            <li><a @click.self="closeModal" href="/work.html">My Work</a></li>
+            <li><a @click.self="closeModal" href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  
+  
+
+
+  
+  <script src="/js/app.js"></script>
+</body>
+</html>
