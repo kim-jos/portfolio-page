@@ -9,35 +9,44 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/menu.css">
   
-  <title>My Work</title>
+  <title>Joseph Kim Portfolio</title>
 </head>
 <body>
   
   <div class="container">
-
-    <h1 class="title">My<span id="titleHighlighted"> Work</span></h1>
-
+    
     <div id="app">
+      
+      <h1 class="title" id="contact">My <span id="titleHighlighted">Work</span></h1>
+
       <div class="hamburger">
-        <i @click="toggleModal" class="fas fa-bars fa-2x"></i>
+        <i @click="toggleModal" class="fas fa-bars fa-2x hamburger-icon"></i>
       </div>
       
       <div v-if="showModal" class="backdrop">
-        <i class="fas fa-times exit" @click.self="closeModal"></i>
         <div class="modalLeft"> 
-          hello
+          <img class="avatar" src="/images/avatar-joseph.png">
+          <div>Joseph Kim</div>
+          <div class="skills">
+            <span>Skills:</span>
+            <i class="fab fa-html5 fa-2x"></i>
+            <i class="fab fa-css3-alt fa-2x"></i>
+            <i class="fab fa-js fa-2x"></i>
+            <i class="fab fa-vuejs fa-2x"></i>
+          </div>
         </div>
         <div class="modalRight"> 
           <ul class="menuBtn">
-            <li><a @click.self="closeModal" >Home</a></li>
+            <li><a @click.self="closeModal" href="/index.html">Home</a></li>
             <li><a @click.self="closeModal" href="/work.html">My Work</a></li>
             <li><a @click.self="closeModal" href="/contact.html">Contact</a></li>
           </ul>
         </div>
+        <i class="fas fa-times exit" @click.self="closeModal"></i>
       </div>
+    
     </div>
 
-    
   </div>
   
   

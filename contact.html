@@ -9,35 +9,33 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/menu.css">
   
-  <title>My Work</title>
+  <title>Joseph Kim Portfolio</title>
 </head>
 <body>
   
+  <h1 class="title">Contact <span id="titleHighlighted">Me</span></h1>
+
   <div class="container">
-
-    <h1 class="title">Contact<span id="titleHighlighted"> Me</span></h1>
-
     <div id="app">
       <div class="hamburger">
-        <i @click="toggleModal" class="fas fa-bars fa-2x"></i>
+        <i @click="toggleModal" class="fas fa-bars fa-2x hamburger-icon"></i>
       </div>
       
       <div v-if="showModal" class="backdrop">
-        <i class="fas fa-times exit" @click.self="closeModal"></i>
         <div class="modalLeft"> 
-          hello
+          <img src="/images/avatar-joseph.png">
         </div>
         <div class="modalRight"> 
           <ul class="menuBtn">
-            <li><a @click.self="closeModal" >Home</a></li>
+            <li><a @click.self="closeModal" href="/index.html">Home</a></li>
             <li><a @click.self="closeModal" href="/work.html">My Work</a></li>
             <li><a @click.self="closeModal" href="/contact.html">Contact</a></li>
           </ul>
         </div>
+        <i class="fas fa-times exit" @click.self="closeModal"></i>
       </div>
     </div>
 
-    
   </div>
   
   
