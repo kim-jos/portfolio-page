@@ -50,10 +50,26 @@ body {
 .description {
   margin: 1px 0 10px 0;
 }
+/* WORK PAGE */
+/* WORK PAGE */
+/* WORK PAGE */
+
 #titleHighlighted {
   color: var(--secondary-color);
 }
 .title {
   font-size: 60px;
   padding-left: 30px;
+}
+
+.projectImg {
+  width: 100px;
+}
+.projects {
+  display: flex;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
 }
