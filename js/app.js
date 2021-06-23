@@ -1,7 +1,6 @@
 let app = Vue.createApp({
   data() {
     return {
-      title: 'my first vue app',
       showModal: false,
     }
   },

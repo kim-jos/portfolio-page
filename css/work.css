@@ -1,0 +1,37 @@
+.title {
+  font-size: 60px;
+  padding-left: 30px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  margin: 15px;
+  padding: 5px;
+}
+.project-img {
+  object-fit: cover;
+  opacity: 0.3;
+  width: 400px;
+}
+.project-img-text {
+  position: relative;
+  bottom: 150px;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.projects {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 30px;
+}
+.btn-dark i {
+  padding: 3px;
+  width: fit-content;
+}
+.btn-dark:hover {
+  color: black;
+}
