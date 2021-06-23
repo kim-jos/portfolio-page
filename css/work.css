@@ -20,6 +20,7 @@
   bottom: 150px;
   margin-left: 15px;
   font-size: 20px;
+  width: fit-content;
 }
 .projects {
   display: flex;
