@@ -1,9 +1,0 @@
-.contact {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.email,
-.phone {
-  margin: 10px 0 10px 30px;
-}
