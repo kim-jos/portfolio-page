@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="https://kit.fontawesome.com/b90c797130.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link rel="stylesheet" href="dist/css/menu.css">
+  <link rel="stylesheet" href="dist/css/work.css">
+  
+  <title>Joseph Kim Portfolio</title>
+</head>
+<body>
+  
+  <div class="container">
+    
+    <div id="app">
+      <div class="container">
+        <h1 class="title" id="contact">My <span id="titleHighlighted">Work</span></h1>
+        <div class="projects">
+          
+          <div class="item">
+            <a href="https://project-planner-223b4.web.app/" class="btn-dark"><img class="project-img" src="images/project/project-planner-project.jpg" alt="Project"></a>
+            <section>
+              <div class="project-img-text">Project Planner App</div>
+              <a href="https://project-planner-223b4.web.app/" class="btn-dark"><i class="fas fa-link"> Link</i></a><br>
+              <a href="https://github.com/kim-jos/project-planner" class="btn-dark"><i class="fab fa-github"> Github</i></a>
+            </section>
+          </div>
+          
+          <div class="item">
+            <a href="https://my-first-c8ebf.web.app/" class="btn-dark"><img class="project-img" src="images/project/live-chat-app-project.jpg" alt="Project"> </a>
+            <section>
+              <div class="project-img-text">Live Chat App</div>
+              <a href="https://my-first-c8ebf.web.app/" class="btn-dark"><i class="fas fa-link"> Link</i></a><br>
+              <a href="https://github.com/kim-jos/live-chat-app" class="btn-dark"><i class="fab fa-github"> Github</i></a>
+            </section>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <div class="hamburger">
+        <i @click="toggleModal" class="fas fa-bars fa-2x hamburger-icon"></i>
+      </div>
+      
+      <div v-if="showModal" class="backdrop">
+        <div class="modalLeft"> 
+          <img class="avatar" src="images/avatar-joseph.png">
+          <div>Joseph Kim</div>
+          <div class="skills">
+            <span>Skills:</span>
+            <i class="fab fa-html5 fa-2x"></i>
+            <i class="fab fa-css3-alt fa-2x"></i>
+            <i class="fab fa-js fa-2x"></i>
+            <i class="fab fa-vuejs fa-2x"></i>
+          </div>
+        </div>
+        <div class="modalRight"> 
+          <ul class="menuBtn">
+            <li><a @click.self="closeModal" href="dist/index.html">Home</a></li>
+            <li><a @click.self="closeModal" href="dist/work.html">My Work</a></li>
+            <li><a @click.self="closeModal" href="dist/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-times exit" @click.self="closeModal"></i>
+      </div>
+    
+    </div>
+
+  </div>
+  
+  
+
+
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
