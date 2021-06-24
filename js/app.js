@@ -11,6 +11,16 @@ let app = Vue.createApp({
     closeModal() {
       this.showModal = !this.showModal
     }
+  },
+  metaInfo() {
+    return {
+        title: this.$i18n.t('home.seo.title'),
+        titleTemplate: '%s - ' + config.app_name,
+        htmlAttrs: {
+            lang: config.lang,
+            amp: undefined
+        }
+    }
   }
 })
 
