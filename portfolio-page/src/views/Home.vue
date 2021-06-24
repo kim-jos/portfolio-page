@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://unpkg.com/vue@next"></script>
-  <script src="https://kit.fontawesome.com/b90c797130.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/menu.css">
-  <link rel="stylesheet" href="css/work.css">
-  
-  <title>Joseph Kim Portfolio</title>
-</head>
-<body>
-  
+<template>
   <div class="container">
     <img class="background" src="images/background.png">
     
@@ -36,9 +21,9 @@
         </div>
         <div class="modalRight"> 
           <ul class="menuBtn">
-            <li><a @click.self="closeModal" href="index.html">Home</a></li>
-            <li><a @click.self="closeModal" href="work.html">My Work</a></li>
-            <li><a @click.self="closeModal" href="contact.html">Contact</a></li>
+            <li><a @click.self="closeModal" href="/index.html">Home</a></li>
+            <li><a @click.self="closeModal" href="/work.html">My Work</a></li>
+            <li><a @click.self="closeModal" href="/contact.html">Contact</a></li>
           </ul>
         </div>
         <i class="fas fa-times exit" @click.self="closeModal"></i>
@@ -53,11 +38,13 @@
     </div>
 
   </div>
-  
-  
+</template>
+
+<script>
 
 
+export default {
+  name: 'Home',
   
-  <script src="/js/app.js"></script>
-</body>
-</html>
+}
+</script>
