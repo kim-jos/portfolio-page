@@ -17,7 +17,7 @@
     width: 100vw;
   }
   .modalLeft {
-    height: 30vh;
+    height: 50vh;
     padding-top: 30px;
   }
   .modalName {
@@ -70,6 +70,7 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding-left: 0;
   }
   .backdrop {
     display: flex;
@@ -80,7 +81,7 @@
     width: 100vw;
   }
   .modalLeft {
-    height: 30vh;
+    height: 50vh;
     padding-top: 30px;
   }
   .modalName {
