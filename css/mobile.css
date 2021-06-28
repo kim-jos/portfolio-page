@@ -1,0 +1,81 @@
+@media only screen and (max-width: 769px) {
+  body {
+    width: 100vw;
+  }
+  .main {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .backdrop {
+    display: flex;
+    flex-direction: column;
+  }
+  .modalLeft,
+  .modalRight {
+    width: 100vw;
+  }
+  .modalLeft {
+    height: 30vh;
+    padding-top: 30px;
+  }
+  .modalName {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .title {
+    padding: 0;
+    margin: 0;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  .project-img-text {
+    padding-left: 25%;
+  }
+  .contact {
+    margin-top: 30px;
+  }
+  .email {
+    display: flex;
+    flex-direction: column;
+  }
+  .phone {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .backdrop {
+    display: flex;
+    flex-direction: column;
+  }
+  .modalLeft,
+  .modalRight {
+    width: 100vw;
+  }
+  .modalLeft {
+    height: 30vh;
+    padding-top: 30px;
+  }
+  .modalName {
+    display: none;
+  }
+}

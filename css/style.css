@@ -8,17 +8,17 @@ a {
   color: inherit;
 }
 html {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
-  color: var(--primary-color);
   background: url(../images/background.png) no-repeat center fixed;
   background-size: cover;
 }
 body {
+  color: var(--primary-color);
   background-color: var(--main-bg-color);
   opacity: 0.9;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   margin: 0;
 }
 .container {
@@ -45,6 +45,7 @@ body {
 }
 .sns a {
   color: inherit;
+  padding: 5px;
 }
 .sns i:hover {
   cursor: pointer;
