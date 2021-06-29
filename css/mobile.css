@@ -18,7 +18,7 @@
     width: 100vw;
   }
   .modalLeft {
-    height: 30vh;
+    height: 50vh;
     padding-top: 30px;
   }
   .modalName {
@@ -68,6 +68,11 @@
   }
   .contact {
     margin-top: 30px;
+    padding: 0;
+  }
+  .contact h1 {
+    margin: 0;
+    margin-top: 10px;
   }
   .email {
     display: flex;
@@ -77,6 +82,9 @@
     display: flex;
     flex-direction: column;
   }
+  .main {
+    padding-left: 0;
+  }
 }
 @media only screen and (max-width: 600px) {
   .main {
@@ -84,6 +92,7 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding-left: 0;
   }
   .backdrop {
     display: flex;
@@ -94,7 +103,7 @@
     width: 100vw;
   }
   .modalLeft {
-    height: 30vh;
+    height: 50vh;
     padding-top: 30px;
   }
   .modalName {
