@@ -23,7 +23,7 @@
 }
 .project-img-text {
   position: relative;
-  bottom: 150px;
+  bottom: 35%;
   margin-left: 15px;
   font-size: 20px;
   width: fit-content;
@@ -35,10 +35,10 @@
   width: 95%;
   padding-left: 30px;
 }
-.btn-dark i {
+.btn i {
   padding: 3px;
   width: fit-content;
 }
-.btn-dark:hover {
+.btn:hover {
   color: black;
 }
